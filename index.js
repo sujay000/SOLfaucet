@@ -41,6 +41,8 @@ const handleResult = ({ success, result }) => {
 
 // const solanaWeb3 = require('@solana/web3.js') // already comes from the script src
 const handleGetSol = async () => {
+    const getSOLbutton = document.getElementById('getSOL')
+    getSOLbutton.disabled = true
     hideThis()
     addLoading()
 
@@ -82,6 +84,8 @@ const handleGetSol = async () => {
             result: String(e),
         })
     }
+
+    getSOLbutton.disabled = false
 }
 
 const hideThis = () => {
