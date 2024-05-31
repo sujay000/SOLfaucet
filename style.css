@@ -1,0 +1,164 @@
+html,
+body,
+:root,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.hero-title {
+    font-size: 4rem;
+
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3.9rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    margin-left: 4rem;
+    font-weight: 700;
+}
+.content {
+    margin: 4rem;
+}
+
+.your-address-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.yourAddress {
+    /* min-width: 100px; */
+    /* width: fit-content; */
+    width: 460px;
+    font-size: 1.15rem;
+}
+
+.your-address-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sub-content {
+    margin-top: 0.75rem;
+}
+
+.content input {
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    outline: 0.5px;
+}
+
+.sub-content input {
+    font-size: 1.15rem;
+    outline: none;
+    margin-right: 0.5rem;
+    width: 460px;
+
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    outline: 0.5px;
+}
+.sub-content button {
+    font-size: 1.15rem;
+
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    outline: 0.5px;
+}
+
+.sol-content div {
+    text-align: center;
+}
+
+.sol-content div input {
+    font-size: 1.2rem;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    outline: 0.5px;
+}
+
+#solValue {
+    width: 2rem;
+}
+.sol-title {
+    font-size: 2rem;
+
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+.button-grp {
+    margin-top: 0.75rem;
+}
+
+.button-grp button {
+    font-size: 1.2rem;
+
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    outline: 0.5px;
+}
+
+#use-my-address {
+    margin-right: 1.5rem;
+}
+
+.success {
+    background-color: rgb(174, 230, 174);
+}
+
+.danger {
+    background-color: rgb(255, 176, 176);
+}
+
+.loading {
+    background-color: rgb(180, 243, 247);
+}
+
+.msg {
+    text-align: center;
+    min-height: 50px;
+    width: 300px;
+    padding: 1rem;
+    z-index: 5;
+    margin: auto;
+    margin-top: 2rem;
+    display: none;
+
+    border-radius: 10px;
+}
+
+.msg.active {
+    display: block;
+}
+
+.msg button {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    outline: 0.5px;
+
+    outline: none;
+}

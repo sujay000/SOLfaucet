@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html class="theme-dark">
+<html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>SOLfaucet</title>
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" /> -->
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <!-- <section class="section">
-            <div class="container">
-                <h1 class="title">Hello World</h1>
-                <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <p class="hero-title">SOL faucet</p>
+                <p class="hero-subtitle">get devnet SOL here.</p>
             </div>
-        </section> -->
+        </section>
 
-        <div>
-            Your address:
+        <div class="content">
+            <div class="your-address-box">
+                <span class="your-address-title">Your wallet address</span>
 
-            <input type="text" disabled class="yourAddress" />
+                <input type="text" class="yourAddress" disabled />
+            </div>
+
+            <div class="sub-content">
+                <input type="text" placeholder="Set your address" class="rememberMe input" />
+                <button onclick="handleRememberMe()">Remember my address</button>
+            </div>
         </div>
 
-        <div>
-            <input type="text" placeholder="Set your address" class="rememberMe" />
-            <button onclick="handleRememberMe()">Remember my address</button>
-        </div>
-
-        <div>
+        <div class="sol-content">
+            <div class="sol-title">Request Airdrop</div>
             <div>
                 <input type="text" placeholder="Address" class="addressInput" />
                 <input type="number" id="solValue" value="1" />
             </div>
-            <div>
-                <button onclick="handleUseMyAddress()">Use my address</button>
-                <button onclick="handleGetSol()">get devnet SOL</button>
+            <div class="button-grp">
+                <button id="use-my-address" onclick="handleUseMyAddress()">Use my address</button>
+                <button id="getSOL" onclick="handleGetSol()">get SOL</button>
+            </div>
+
+            <div class="msg">
+                <div class="msg-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus et nisi, corporis
+                    voluptas dignissimos dolore nesciunt facilis, maxime itaque suscipit vitae porro quisquam maiores
+                    sed aperiam, architecto rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sit
+                    vel nos
+                </div>
+
+                <button onclick="hideThis()">Close</button>
             </div>
         </div>
     </body>
     <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
     <script src="./index.js"></script>
-
-    <script></script>
 </html>
