@@ -11,15 +11,24 @@ body,
     font-style: normal;
     color: black;
 }
+::selection {
+    background: #00ffbd;
+    color: #232323;
+}
 
 .hero-title {
     font-size: 4rem;
-
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-left: 3.9rem;
     margin-bottom: 1rem;
+    display: inline-block;
+}
+.hero-title:hover {
+    background-image: linear-gradient(45deg, #14f195, #9945ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
@@ -141,12 +150,14 @@ body,
     z-index: 5;
     margin: auto;
     margin-top: 2rem;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 
     border-radius: 10px;
 }
 
 .msg.active {
+    visibility: visible;
     display: block;
 }
 
@@ -161,4 +172,11 @@ body,
     outline: 0.5px;
 
     outline: none;
+}
+
+#getSOL {
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    outline: 0.5px;
 }
